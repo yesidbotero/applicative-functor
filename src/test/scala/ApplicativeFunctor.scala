@@ -4,7 +4,6 @@ import cats.instances.option._
 import domain.applicatives.OptionApplicativeFunctor
 import domain.functors.Functor
 import org.scalatest.funsuite.AnyFunSuite
-
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future}
 
@@ -70,6 +69,12 @@ class ApplicativeFunctor extends AnyFunSuite with Context {
     )
   }
 
+  test("Un applicative functor puede ser utilizado para hacer validaciones"){
+    /*  Debido a que en Applicative functor no hay fail fast! por no ser una mónada,
+     *  podemos utilizarlo para hacer validaciones.
+     */
 
+    
+  }
 
 }
